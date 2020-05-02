@@ -7,7 +7,7 @@ const Bubbles = ({ colors }) => {
   useEffect(() => {
     const generateBubbleData = colors.map((_, i) => ({
       value: Math.floor(Math.random() * (colors.length * 2)) + 1,
-      key: `${i + 1}`
+      key: `${i + 1}` 
     }));
     setBubbleData(generateBubbleData);
   }, [colors]);
